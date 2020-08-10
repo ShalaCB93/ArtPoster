@@ -1,0 +1,78 @@
+#!/bin/python3
+from turtle import *
+screen = Screen()
+screen.setup(400, 400)
+
+colors = {
+  'lovelylav': '#F40AF4',
+  'Midnight': '#111130',
+  'white': '#FCFCFC',
+  'sunflower': '#F4F40A',
+  'lime': '#7FF40A',
+  'aquafina': '#0AF4F4',
+  'OJ': '#F09722'
+}
+  
+#background
+screen.bgcolor(colors['Midnight'])
+
+#words
+color(colors['lovelylav'])
+style = ('Verdana', 30, 'bold')
+write('Increeable', font=style, align='center')
+hideturtle()
+penup()
+right(60)
+forward(50)
+color(colors['lime'])
+style = ('Arial', 35, 'bold')
+write('ART', font=style, align='left')
+penup()
+right(50)
+forward(60)
+color(colors['OJ'])
+style = ('script', 20, 'italic')
+write('By: S. Cree', font=style, align='right')
+penup()
+forward(-170)
+right(40)
+color(colors['aquafina'])
+style = ('calibri', 12, 'italic')
+write('Creativity is intelligence having fun', font=style, align='center')
+penup()
+
+#Stars
+forward(30)
+color(colors['white'])
+circle(20)
+dot(10)
+penup()
+right(50)
+forward(150)
+color(colors['sunflower'])
+circle(20)
+dot(50)
+penup()
+forward(70)
+right(90)
+color(colors['white'])
+circle(90)
+dot(5)
+penup()
+right(150)
+forward(70)
+color(colors['white'])
+circle(25)
+dot(6)
+penup()
+right(130)
+forward(-290)
+color(colors['white'])
+circle(25)
+dot(6)
+penup()
+right(130)
+forward(-220)
+color(colors['white'])
+circle(25)
+dot(7)
